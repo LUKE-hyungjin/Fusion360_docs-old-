@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 데이터 패널
-has_children: true
+nav_order: 1
 permalink: /docs/tour_the_interface/data_panel
 parent: 인터페이스 둘러보기
 grand_parent: Fusion 360에서 시작
@@ -43,4 +43,29 @@ grand_parent: Fusion 360에서 시작
 ## 프로젝트 열기
 프로젝트 또는 샘플의 이름을 두 번 클릭하여 특정 프로젝트 또는 샘플 폴더 내에 포함된 데이터에 액세스합니다.
 
-note: 팀 이름이 데이터 패널 상단에 표시됩니다. 팀 이름을 클릭하여 웹 응용프로그램에서 팀에 액세스합니다.
+note: 팀 이름이 데이터 패널 상단에 표시됩니다. 팀 이름을 클릭하여 웹 응용프로그램에서 팀에 액세스합니다.  
+![img](https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/data-panel-ui-overview.png)
+
+### 1. 프로젝트 선택기
+활성 프로젝트의 이름을 표시합니다. 뒤 화살표를 클릭하여 프로젝트 리스트를 표시합니다.
+
+### 2. 프로젝트 도구
+웹에 프로젝트 데이터를 표시하거나 활성 프로젝트를 검색합니다.
+
+### 3. 데이터 패널 표시/숨기기
+**데이터 패널**을 표시하거나 숨기려면 클릭합니다.
+
+### 4. 데이터 또는 사용자
+**데이터 패널**에서 데이터 또는 사람 표시를 제어합니다.
+
+### 5. 보기 도구
+새 폴더를 작성하거나 **데이터 패널**에서 항목 표시를 변경합니다.
+
+**업로드**: 지원되는 CAD 시스템에서 디자인 데이터를 업로드합니다.
+
+**새 폴더**: 활성 프로젝트에 새 폴더를 작성합니다.
+
+**옵션**: ![imng](https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/icon/browser/settings.png)설정 아이콘 데이터 정렬 및 나열 방법을 선택합니다.
+
+### 6. 상황에 맞는 메뉴
+마우스 오른쪽 버튼을 클릭하여 해당 특정 디자인에 대한 명령에 액세스합니다.
