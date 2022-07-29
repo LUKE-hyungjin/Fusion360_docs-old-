@@ -6,13 +6,13 @@ description: "description"
 permalink: /
 ---
 
-# Welcome to github.io
+# Fusion 360 Documentation
 {: .fs-8 }
 
 Github Description
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/just-the-docs/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Get started now](/docs/get_started_in_fusion_360){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it English](https://github.com/just-the-docs/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
