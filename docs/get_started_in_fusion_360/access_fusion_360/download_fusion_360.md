@@ -2,9 +2,9 @@
 layout: default
 title: 다운로드 Fusion 360
 nav_order: 1
-has_children: true
-permalink: /docs/download_fusion_360
+permalink: /docs/access_fusion_360/download_fusion_360
 parent: 액세스 Fusion 360
+grand_parent: Fusion 360에서 시작
 ---
 # 다운로드 Fusion 360
 **Fusion 360** 다운로드 방법을 알아보십시오.

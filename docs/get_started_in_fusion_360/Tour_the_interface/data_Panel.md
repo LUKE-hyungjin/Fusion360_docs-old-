@@ -4,6 +4,7 @@ title: 데이터 패널
 has_children: true
 permalink: /docs/tour_the_interface/data_panel
 parent: 인터페이스 둘러보기
+grand_parent: Fusion 360에서 시작
 ---
 # 데이터 패널
 **데이터 패널을 사용하여 Fusion 360 프로젝트 및 디자인 데이터에 액세스하고, 구성하고, 공유할 수 있습니다.**

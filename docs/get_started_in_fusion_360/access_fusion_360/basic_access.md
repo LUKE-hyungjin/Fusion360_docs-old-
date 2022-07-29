@@ -2,9 +2,9 @@
 layout: default
 title: 기본 액세스
 nav_order: 3
-has_children: true
 permalink: /docs/access_fusion_360/basic_access
 parent: 액세스 Fusion 360
+grand_parent: Fusion 360에서 시작
 ---
 # 기본 액세스
 라이센스 기간이 만료되더라도 데이터에 대한 기본 액세스 권한은 계속 유지됩니다.
