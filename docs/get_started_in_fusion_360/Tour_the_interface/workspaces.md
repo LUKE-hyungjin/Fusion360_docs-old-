@@ -2,7 +2,7 @@
 layout: default
 title: 작업공간
 nav_order: 2
-permalink: /docs/tour_the_interface/data_panel
+permalink: /docs/tour_the_interface/workspaces
 parent: 인터페이스 둘러보기
 grand_parent: Fusion 360에서 시작
 ---

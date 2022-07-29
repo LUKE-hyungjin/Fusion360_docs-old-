@@ -2,7 +2,7 @@
 layout: default
 title: 학습 패널
 nav_order: 3
-permalink: /docs/tour_the_interface/data_panel
+permalink: /docs/tour_the_interface/learning_pannel
 parent: 인터페이스 둘러보기
 grand_parent: Fusion 360에서 시작
 ---
