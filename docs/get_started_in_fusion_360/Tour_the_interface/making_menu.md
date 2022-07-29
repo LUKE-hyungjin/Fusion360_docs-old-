@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 학습 패널
+title: 표식 메뉴
 nav_order: 5
 permalink: /docs/tour_the_interface/making_menu
 parent: 인터페이스 둘러보기

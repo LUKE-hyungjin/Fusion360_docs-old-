@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 학습 패널
+title: 홈 탭
 nav_order: 4
 permalink: /docs/tour_the_interface/home_tab
 parent: 인터페이스 둘러보기
