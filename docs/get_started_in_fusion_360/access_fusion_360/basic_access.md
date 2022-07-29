@@ -3,7 +3,7 @@ layout: default
 title: 기본 액세스
 nav_order: 3
 has_children: true
-permalink: /docs/verify_access_to_fusion_team
+permalink: /docs/basic_access
 parent: 액세스 Fusion 360
 ---
 # 기본 액세스
