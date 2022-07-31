@@ -6,141 +6,47 @@ permalink: /docs/assemblies/joints
 has_children: true
 parent: 조립품
 ---
-접합 유형
-=====
+접합
+==
 
-Fusion 360의 접합 유형에 대해 알아봅니다.
+**디자인** 작업공간의 Fusion 360에서 조립품의 구성요소 사이에 접합을 작성할 수 있습니다.
 
-Fusion 360에는 7가지 유형의 접합이 있습니다. **접합** 및 **현재 위치에서 접합** 명령을 사용하여 접합을 작성할 수 있습니다. 각 접합 유형은 다른 자유도를 사용하여 동작을 정의합니다.
+**접합**은 조립품에서 두 구성요소 사이의 상대적 위치 및 동작을 정의하는 기계적 관계입니다.
 
-![img](asset\images\joints.png)
+움직이는 구성요소가 있는 조립품을 디자인할 때 동작 시뮬레이션은 프로토타입 제작 프로세스의 중요한 부분입니다.
 
-주: 접합을 작성할 때 파라메트릭 모델링에서 변경할 수 있는 매개변수도 작성합니다.
+Fusion 360에서 접합은 구성요소가 할 수 없는 일 대신 **할 수** 있는 일에 집중할 수 있도록 하여 구성요소 관계의 복잡성을 줄입니다. 이는 동작을 제한하기 위해 사용 가능한 자유도(DOF)를 잠그는 구속조건 또는 메이트와 같은 다른 접근 방식과는 다릅니다. 이렇게 하려면 조립품의 구성요소가 원하는 방식으로 이동하는지 확인하기 위해 관련된 기본 물리적 요소와 수학을 이해해야 합니다.
 
-주: 접합을 작성할 때 자유도를 최소로 유지하면 조립품을 더 빠르게 테스트하는 데 도움이 됩니다.
+반면 접합은 구성요소 간의 동작을 정의하고 해당 동작을 작성하기 위해 필요한 자유도만 열어 둡니다. 이렇게 하면 물리적 요소를 이해할 필요가 줄어들고 동작과 결과 간의 이해가 가능해집니다.
 
-![강체 접합 아이콘](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/icon/joint-rigid.png) 강체
----------------------------------------------------------------------------
+접합 액세스 지점
+---------
 
-**강체** 접합 유형은 구성요소를 함께 잠그고 모든 자유도를 제거합니다.
+조립품에서 작성하는 접합과 상호 작용할 수 있는 세 가지 액세스 지점은 다음과 같습니다.
 
-#### 동작
+![접합에 대한 액세스 점](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/diagram/joints-overview.png)
 
-제어할 동작이 없으므로 조정할 추가 설정이 없습니다.
+*   **브라우저**의 **접합** 폴더 내
+*   **캔버스**의 직접 구성요소에 있으며, **접합** 유형 아이콘으로 지정됩니다.
+*   **타임라인**에서
 
-#### 예
+주: **브라우저**에서 각 구성요소에는 고유한 **접합** 폴더가 있습니다.
 
-*   구성요소 함께 용접
-*   동작이 허용되지 않도록 여러 구성요소를 여러 위치에 함께 볼트
+**조립** 패널에서 다음 명령을 사용하여 접합을 작성 및 수정할 수 있습니다.
 
-![강체 접합 예](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/example/joint-rigid.png)
+*   **접합** ![접합 아이콘](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/icon/asm/joint.png): 서로 관련하여 아직 배치되지 않은 구성요소 간에 접합을 작성합니다.
+*   **현재 위치에서 접합** ![현재 위치에서 접합 아이콘](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/icon/asm/as-built-joint.png): 이미 서로 관련하여 배치된 구성요소 간에 접합을 작성합니다.
+*   **접합 원점** ![접합 원점 아이콘](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/icon/asm/joint-origin.png): 접합 원점을 작성하고 구성요소에 배치합니다.
+*   **강체 그룹** ![강체 그룹 아이콘](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/icon/asm/rigid-group.png): 조립품에서 함께 이동하도록 구성요소를 함께 잠급니다.
+*   **접선 관계** ![접선 관계 아이콘](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/icon/asm/tangent-relationship.png): 한 구성요소의 바디에 있는 면과 조립품 내 다른 구성요소의 바디에 있는 연결된 면 세트 간에 접선 관계를 작성합니다.
+*   **접합 구동** ![접합 구동 아이콘](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/icon/asm/drive-joints.png): 회전 각도 및 거리와 같은 접합 동작 입력을 수정하여 자유도를 제어합니다.
+*   **동작 링크** ![동작 링크 아이콘](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/icon/asm/motion-link.png): 두 접합의 동작을 함께 연결합니다.
 
-![회전 접합 아이콘](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/icon/joint-revolute.png) 회전
-------------------------------------------------------------------------------
+캔버스 또는 브라우저에서 기존 접합을 마우스 오른쪽 버튼으로 클릭하고 다음 추가 명령을 사용하여 수정할 수 있습니다.
 
-**회전** 접합 유형을 사용하면 구성요소가 추가 변환 없이 **접합 원점**을 중심으로 회전할 수 있습니다.
-
-#### 동작
-
-**회전:** 구성요소가 회전할 기준이 되는 축을 정의합니다.
-
-#### 예
-
-*   연결 작업
-*   단일 점 주위로 볼트 구성요소 회전
-
-![회전 접합 예](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/example/joint-revolute.png)
-
-![슬라이더 접합 아이콘](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/icon/joint-slider.png) 슬라이더
---------------------------------------------------------------------------------
-
-**슬라이더** 접합 유형을 사용하면 구성요소가 추가 회전 없이 단일 축을 따라 이동할 수 있습니다.
-
-#### 동작
-
-\*_슬라이드: \*_ 구성요소가 이동할 축을 정의합니다.
-
-#### 예
-
-*   회전 없이 로드의 위 및 아래로 구성요소 이동
-
-![슬라이더 접합 예](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/example/joint-slider.png)
-
-![원통형 접합 아이콘](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/icon/joint-cylindrical.png) 원통형
------------------------------------------------------------------------------------
-
-**원통형** 접합 유형을 사용하면 구성요소가 단일 축을 중심으로 회전하고 이동할 수 있습니다.
-
-#### 동작
-
-*   **축:** 구성요소가 이동하고 회전할 기준이 되는 축을 정의합니다.
-
-#### 예
-
-*   구멍을 통해 구성요소 스레딩
-*   로드의 이동 표시
-
-![원통형 접합 예](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/example/joint-cylindrical.png)
-
-![핀-슬롯 접합 아이콘](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/icon/joint-pin-slot.png) 핀-슬롯
-----------------------------------------------------------------------------------
-
-**핀-슬롯** 접합 유형을 사용하면 구성요소가 한 축을 중심으로 회전하고 다른 축을 따라 이동할 수 있습니다.
-
-#### 동작
-
-*   **회전:** 구성요소가 이동할 축을 정의합니다.
-*   **슬라이드:** 구성요소가 회전할 기준이 되는 축을 정의합니다.
-
-주: **회전** 및 **슬라이드** 둘 다에 대해 동일한 축을 선택할 수는 없습니다. **회전** 축을 선택하면 선택한 축이 **슬라이드** 축 리스트에서 제거됩니다(그 반대의 경우도 마찬가지).
-
-#### 예
-
-*   핀 슬롯 내에서 구성요소의 회전 및 이동 표시
-
-![핀 슬롯 접합 예](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/example/joint-pin-slot.png)
-
-![평면 접합 아이콘](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/icon/joint-planar.png) 평면
-----------------------------------------------------------------------------
-
-**평면** 접합 유형을 사용하면 구성요소가 두 축을 따라 이동하고 단일 축을 중심으로 회전할 수 있습니다.
-
-#### 동작
-
-*   **법선:** 구성요소가 회전할 기준이 되는 평면에 수직인 축을 정의합니다.
-*   **슬라이드:** 평면형 이동을 위한 축을 정의합니다.
-
-주: **일반** 축을 선택하면 **슬라이드** 축이 자동으로 공제됩니다.
-
-#### 예
-
-*   추가 자유도를 제한하지 않고 동일한 평면을 따라 두 구성요소 연결
-*   테이블 상단으로 상자 이동
-    *   상자의 하단 면을 테이블의 상단 면에 닿도록 유지합니다.
-    *   테이블 상단을 따라 상자를 이동하고 테이블 상단의 법선을 기준으로 회전합니다.
-
-![평면 접합 예](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/example/joint-planar.png)
-
-![볼 접합 아이콘](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/icon/joint-ball.png) 볼
-------------------------------------------------------------------------
-
-**볼** 접합 유형을 사용하면 변환 없이 짐벌 시스템(3개의 내포된 회전)을 사용하여 구성요소가 3개 축 주위를 회전할 수 있습니다.
-
-#### 동작
-
-*   **피치:** 구성요소가 회전할 때 기준으로 사용할 측면 축을 정의합니다.
-*   **좌우:** 구성요소가 회전할 때 기준으로 사용할 수직 축을 정의합니다.
-
-주: **피치**와 **좌우**에 대해 동일한 축을 선택할 수는 없습니다. **피치** 및 **좌우**를 정의할 때 **롤**(세로 축)도 정의합니다. 이를 통해 예상 회전 방향 및 이동 방향과 연관된 값을 설정하는 방법을 정의할 수 있습니다.
-
-#### 예
-
-*   완전한 회전 자유도가 필요하지만 회전 점은 이동하지 않아야 함
-
-![볼 접합 예](https://help.autodesk.com/cloudhelp/KOR/Fusion-Assemble/images/example/joint-ball.png)
-
-축 정의
-----
-
-*   **X축**, **Y축** 및 **Z축**을 사용하면 **접합 원점**을 교차하는 미리 정의된 축을 선택할 수 있습니다.
-*   **사용자 정의 축**을 사용하면 **접합 원점**에서 떨어진 축을 선택할 수 있습니다.
+*   **접합 편집**: **접합 편집** 대화상자를 열어 접합과 연관된 모든 설정을 편집할 수 있습니다.
+*   **접합 제한 편집**: **접합 제한 편집** 대화상자를 열고 접합의 최소, 최대 및 나머지 제한을 편집할 수 있습니다.
+*   **잠금**: 접합의 현재 위치 및 설정을 잠급니다.
+*   **억제**: 접합이 구성요소에 작용하지 않도록 일시적으로 제거합니다.
+*   **접합 애니메이트**: 단일 접합을 애니메이트합니다.
+*   **모형 애니메이트**: 조립품의 모든 접합을 애니메이트합니다.
